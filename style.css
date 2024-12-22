@@ -1,0 +1,78 @@
+* {
+  /* 테두리를 포함한 모든 태그 요소들의 크기를 보여준다 */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #2c3e50;
+  background-color: #f0f8ff;
+  animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.container {
+  display: block;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 300%;
+  color: #34495e;
+  text-align: center;
+}
+
+.calculator {
+  display: inline-block;
+}
+
+input {
+  /* direction: 방향설정 */
+  /* ltr(left to right): 입력 방향을 왼쪽에서 오른쪽으로 설정 */
+  direction: ltr;
+  background-color: white;
+  width: 80vw;
+  font-size: 3rem;
+  color: #2c3e50;
+  border: 2px solid #bdc3c7;
+  border-radius: 0.5rem;
+}
+
+table {
+  /* 주로 display 속성이 block인 태그들을 가운데로 옮기고 싶을 때 사용 */
+  margin: 0 auto;
+}
+
+button {
+  background-color: #ecf0f1;
+  width: 20vw;
+  height: 10vw;
+  font-size: 2rem;
+  border: 1px solid #afb2b3;
+  border-radius: 1rem;
+  color: #2c3e50;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.15);
+}

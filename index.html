@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unbox 계산기</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="calc.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <h1 style="color: black; margin-left: 0.25rem">언빡스 계산기</h1>
+      <br />
+      <div class="calculator">
+        <input type="text" id="screen" class="screen" readonly />
+        <table>
+          <tr>
+            <td colspan="2">
+              <button id="resetBtn" style="width: 100%; background-color: #f01600; font-weight: bold; color: #ecf0f1; border-radius: 1rem">
+                <i class="fa-solid fa-c"></i>
+              </button>
+            </td>
+            <td>
+              <button id="eraseBtn"><i class="fa-solid fa-eraser"></i></button>
+            </td>
+            <td>
+              <button id="divBtn" value="/"><i class="fa-solid fa-divide"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button value="7"><i class="fa-solid fa-7"></i></button>
+            </td>
+            <td>
+              <button value="8"><i class="fa-solid fa-8"></i></button>
+            </td>
+            <td>
+              <button value="9"><i class="fa-solid fa-9"></i></button>
+            </td>
+            <td>
+              <button id="multiBtn" value="*"><i class="fa-solid fa-xmark"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button value="4"><i class="fa-solid fa-4"></i></button>
+            </td>
+            <td>
+              <button value="5"><i class="fa-solid fa-5"></i></button>
+            </td>
+            <td>
+              <button value="6"><i class="fa-solid fa-6"></i></button>
+            </td>
+            <td>
+              <button id="subBtn" value="-"><i class="fa-solid fa-minus"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button value="1"><i class="fa-solid fa-1"></i></button>
+            </td>
+            <td>
+              <button value="2"><i class="fa-solid fa-2"></i></button>
+            </td>
+            <td>
+              <button value="3"><i class="fa-solid fa-3"></i></button>
+            </td>
+            <td>
+              <button id="plusBtn" value="+"><i class="fa-solid fa-plus"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button value="0" style="width: 100%"><i class="fa-solid fa-0"></i></button>
+            </td>
+            <td>
+              <button value=".">.</button>
+            </td>
+            <td>
+              <button id="resultBtn" value="=" style="font-weight: bold; background-color: #2c81ff; color: #ecf0f1">
+                <i class="fa-solid fa-equals"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
